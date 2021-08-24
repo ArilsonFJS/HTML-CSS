@@ -10,61 +10,87 @@
 
 <body>
 
-    <h2>Formatação de texto</h2>
+    <h2>Formatação de texto semânticos</h2>
 
+    <h3>Negrito / Destaque</h3>
+    <p>Nesta frase, temos <b>um termo negrito</b> usando a tag B (não semântico).</p>
+    <p>Nesta frase, temos <strong>um termo em destaque</strong> usando a tag STRONG (semântico).</p>
+
+    <h3>Itálico / Ênfase</h3>
+    <p>Nesta frase, temos <i>um termo em itálico</i> usando a tag I (não semântico).</p>
+    <p>Nesta frase, temos <em>um termo em ênfase</em> usando a tag EM (semântico).</p>
+
+    <h3>Texto marcado</h3>
+    <p>Podemos criar <mark>um texto marcado</mark> usando a tag MARK</p>
+
+    <h3>Texto pequeno</h3>
+    <p>Para criar um <small>texto pequeno</small> usamos a tag SMALL.</p>
+
+    <h3>Texto deletado</h3>
+    <p>Podemos marcar <del>um texto como excluído</del> para indicar que ele pode ser lido, mas não considerado</p>
+
+    <h3>Texto inserido</h3>
+    <p>POdemos marcar <ins>um texto como inserido</ins> para dar ênfase e indicar que ele foi adicionado depois</p>
+
+    <h3>Texto Sobrescrito </h3>
+    <p>Para inserir coisas do tipo x<sup>2</sup>+3</p>
+
+    <h3>Texto subscrito</h3>
+    <p>Para inserir coisas do tipo H<sub>2</sub>0</p>
+
+    <h3>Abreviação</h3>
     <p>
-    <h3>&lt;b&gt;</h3>
-    Ele é geralmente usado para destacar <b>&lt;b&gt; palavras-chaves &lt;/b&gt;</b> em um
-    resumo, nomes de produtos em um comentário ou outros vãos de texto cuja a apresentação típica seria negrito.
-    Outro exemplo de seu uso é como marcação da frase principal de cada paragrafo de um artigo.
+        O Elemento HTML <abbr title="Elemento de Abreviação HTML">&lt;abbr&gt;abbr&lt;/abbr&gt;</abbr> representa uma
+        abreviação e opcionalmente fornece uma descrição completa para ela. Se presente, o atributo title deve conter a
+        descrição completa e apenas ela.
     </p>
+
+    <h3>Código-fonte / Pré-formatação</h3>
+    <p>
+        A tag é usada para definir a entrada do teclado. O conteúdo interno é exibido na fonte
+        <kbd>&lt;kbd&gt;monoespaçada padrão do navegador.&lt;/kbd&gt;</kbd>
+    </p>
+
+    <h3>Tag &lt;code&gt;</h3>
+    <pre>
+        <code>
+    System.out.println("Digite um num");
+    int num = scn.nextInt();
+
+    if(num % 2 == 0){
+        System.out.println("O num é PAR");
+    }else{
+        System.out.println("O num é ÌMPAR");
+    }
+        </code>
+    </pre>
+
+    <h3>Citações simples</h3>
+    <p>Como dizia o pai de um amigo: <q>O computador é um burro muito rápido</q></p>
+
+    <h3>Citações completas</h3>
+    <p>
+        Segundo Joshua Bloch, no seu livro Java Efetivo (Terceira geração): 
+    <p>
+    <blockquote cite="https://www.google.com.br/books/edition/Java_Efetivo/MMeSDwAAQBAJ?hl=pt-BR&gbpv=1&dq=Java&printsec=frontcover">
+        Se já estudou um segundo idioma e tentou usá-lo fora da sala de aula, você sabe que exitem três fatores que deve dominar: como o idiomar está estruturado(gramática), como nomear aquilo de que quer falar(vocabulário) e as formas usuais e efetivas de se dizer os objetos cotidianos (uso).
+    </blockquote>
+
     <hr>
 
-    <p>
-    <h3>&lt;em&gt;</h3>
-    O elemento HTML <em>&lt;em&gt; marca o texto que tem ênfase &lt;/em&gt;</em>. O conteúdo
-    interno é normalmente exibido em itálico. Um leitor de tela pronunciará as palavras com ênfase, usando ênfase
-    verbal.
-    </p>
-    <hr>
+    <h3>Adicionando parágrafos &lt;p&gt; </h3>
 
     <p>
-    <h3>&lt;i&gt;</h3>
-    Representa uma parte do texto que é destacada do restante por algum motivo, por exemplo,
-    termos técnicos, expressões de outros idiomas ou pensamentos de personagens fictícios. Normalmente, é
-    apresentado com o uso do tipo "itálico".
-    </p>
-    <hr>
+        &lt;p&gt; It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+        essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem
+        Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of
+        Lorem Ipsum. &lt;/p&gt;</p>
+    <p>
+
+    <h3>Quebra de linha &lt;br&gt;</h3>
 
     <p>
-    <h3>&lt;u&gt;</h3>
-    O elemento incluem anotação de erros ortográficos, também representa um intervalo de texto embutido que deve ser
-    processado de uma forma que indique que possui uma anotação não textual. Isso é renderizado por padrão como um
-    <u>&lt;u&gt;sublinhado sólido simples&lt;/u&gt;</u>, mas pode ser alterado usando CSS.
-    No entanto, foi restaurado no HTML 5 com um novo significado semântico: marcar o texto como tendo alguma forma de
-    anotação não textual aplicada.
-    Tenha cuidado para evitar usar o elemento com seu estilo padrão (de texto sublinhado) de forma que seja confundido
-    com um hiperlink, que também é sublinhado por padrão.
-    </p>
-    <hr>
-
-    <p>
-    <h3>&lt;abbr&gt;</h3>
-    O Elemento HTML <abbr title="Elemento de Abreviação HTML">&lt;abbr&gt;abbr&lt;/abbr&gt;</abbr> representa uma
-    abreviação e opcionalmente fornece uma descrição completa para ela. Se presente, o atributo title deve conter a
-    descrição completa e apenas ela.
-    </p>
-    <hr>
-
-    <p>
-    <h3>&lt;kbd&gt;</h3>
-    A tag é usada para definir a entrada do teclado. O conteúdo interno é exibido na fonte <kbd>&lt;kbd&gt;monoespaçada padrão do navegador.&lt;/kbd&gt;</kbd>
-    </p>
-    <hr>
-
-    <p>
-    <h3>&lt;small&gt;</h3>
-    O elemento HTML representa comentários laterais e letras pequenas, como direitos autorais e texto legal, independentemente de sua apresentação estilizada. Por padrão, ele renderiza <small>&lt;small&gt; o texto em um tamanho de fonte menor &lt;/small&gt;</small>.
+        It has survived not only five centuries &lt;br&gt; <br> but also the leap into electronic typesetting
     </p>
     <hr>
 
