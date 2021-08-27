@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídia em HTML5</title>
+</head>
+
+<body>
+
+    <h1>Reproduzindo Áudio</h1>
+    <!--OBS add mais de um tipo de arquivo de audio -->
+    <audio preload="metadata" controls>
+        <source src="audios/guanacast-33.mp3" type="audio/mpeg">
+        <p>Seu navegador não suporta o formato MP3 <a href="audios/guanacast-33.mp3" download="guanacast-33.mp3" type="audio/mpeg"></a>Faça o download</p>
+    </audio>
+
+    <h1>Imagens Dinâmicas</h1>
+    <!-- A Ordem dos tamanhos devem ser sempre seguidas -->
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/img-dinamicas/foto-p.png" type="image/png">
+
+        <source media="(max-width: 1050px)" srcset="imagens/img-dinamicas/foto-m.png" type="image/png">
+
+        <img src="imagens/img-dinamicas/foto-g.png" alt="Imagem flexível">
+    </picture>
+</body>
+
+</html>
