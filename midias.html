@@ -17,24 +17,35 @@
         <p>Seu navegador não suporta o formato MP3 <a href="audios/guanacast-33.mp3" download="guanacast-33.mp3"
                 type="audio/mpeg"></a>Faça o download</p>
     </audio>
+    <hr>
 
     <h1>Vídeos</h1>
+
+    <h2>Videos Locais</h2>
     <!--OBS add mais de um tipo de arquivo -->
-    <video width="175" controls poster="imagens/Logo HTML-512.png">
+    <video width="175" controls loop poster="imagens/Logo HTML-512.png">
         <source src="videos/video.mp4" type="video/mp4">
         <p>
             Seu navegador não possui compatibilidade para reproduzir vídeos <a href="videos/video.mp4"
-            download="video.mp4" type="video/mp4"></a>
+                download="video.mp4" type="video/mp4"></a>
         </p>
     </video>
 
+    <h2>Vídeos do Youtube</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/JMJUzZBbZno" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+
+    <h2>Vídeos do Vimeo</h2>
+    <iframe src="https://player.vimeo.com/video/137615326?h=031533245f&color=ff9933&portrait=0" width="560" height="315"
+        frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+    <hr>
     <h1>Imagens Dinâmicas</h1>
     <!-- A Ordem dos tamanhos devem ser sempre seguidas -->
     <picture>
         <source media="(max-width: 750px)" srcset="imagens/img-dinamicas/foto-p.png" type="image/png">
-
         <source media="(max-width: 1050px)" srcset="imagens/img-dinamicas/foto-m.png" type="image/png">
-
         <img src="imagens/img-dinamicas/foto-g.png" alt="Imagem flexível">
     </picture>
 </body>
